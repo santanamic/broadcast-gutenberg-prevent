@@ -6,7 +6,7 @@ Version: 1.0.0
 Description: 
 */
 
-function load_broadcast_lifterlms() {
+function load_broadcast_gutenberg_prevent() {
 
 	if ( ! function_exists( 'ThreeWP_Broadcast' ) )
 		wp_die( 'Please activate Broadcast before this plugin.' );
@@ -18,7 +18,7 @@ function load_broadcast_lifterlms() {
 		require_once( $plugin_path . 'class-broadcast-plugin-gutenberg-prevent.php' );	
 }
 
-function load_broadcast_lifterlms() {
+function resgister_scripts_gutenberg_prevent() {
 
 	wp_enqueue_script(
 		'broadcast-gutenberg-prevent',
@@ -34,5 +34,5 @@ function load_broadcast_lifterlms() {
 	);	
 }
 
-add_action( 'threewp_broadcast_loaded', 'load_broadcast_lifterlms' );
-add_action( 'enqueue_block_assets', [ $this, 'resgister_block_scripts' ] );
+add_action( 'threewp_broadcast_loaded', 'load_broadcast_gutenberg_prevent' );
+add_action( 'enqueue_block_assets', 'resgister_scripts_gutenberg_prevent' );

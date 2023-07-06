@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Broadcast Gutenberg Prevent
-Version: 1.0.0
+Version: 1.0.1
 Description: 
 */
 
@@ -30,7 +30,7 @@ function resgister_scripts_gutenberg_prevent() {
 			'wp-i18n',
 			'wp-editor'
 		),
-		'1.0.0', true
+		'1.0.1', true
 	);	
 }
 

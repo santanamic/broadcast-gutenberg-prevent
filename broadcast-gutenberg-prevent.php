@@ -22,7 +22,7 @@ function resgister_scripts_gutenberg_prevent() {
 
 	wp_enqueue_script(
 		'broadcast-gutenberg-prevent',
-		plugin_dir_url( __FILE__ ) . '/src/build/index.js',
+		plugin_dir_url( __FILE__ ) . 'build/index.js',
 		array(
 			'wp-blocks',
 			'wp-components',

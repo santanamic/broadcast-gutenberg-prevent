@@ -11,3 +11,5 @@ composer.json
 composer.lock
 pluginrelance.php
 README.md
+package.json
+package-lock.json

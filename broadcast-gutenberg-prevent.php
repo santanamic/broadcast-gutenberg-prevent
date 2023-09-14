@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Broadcast Gutenberg Prevent
-Version: 1.0.1
+Version: 1.0.5
 Description: 
 */
 
@@ -19,7 +19,6 @@ function load_broadcast_gutenberg_prevent() {
 }
 
 function resgister_scripts_gutenberg_prevent() {
-
 	wp_enqueue_script(
 		'broadcast-gutenberg-prevent',
 		plugin_dir_url( __FILE__ ) . 'build/index.js',
